@@ -82,7 +82,8 @@ WSGI_APPLICATION = 'djangocrud.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://postgres:postgres@localhost/postgres',
+        default='postgresql://postgres:Pacita10@@localhost/django-crud',
+        conn_max_age=600
     )
 }
 
